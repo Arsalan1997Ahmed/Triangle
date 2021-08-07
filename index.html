@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center><h1>
+        <script>
+            var rows = parseInt(prompt("Number of rows in triangle"));
+            for (var i = 1; i <= rows; i++) {
+                if (i == rows) {
+                    document.write("*");
+                }
+                else {
+                    document.write(" ");
+                }
+                
+            }
+                 document.write("<br>");
+                 var col1 = rows - 1;
+                 var col2 = rows + 1;
+                 for(var k=0;k<rows;k++){     
+            for (var j = 0; j <= col2; j++) {
+                if (j < col1) {
+                    document.write(" ");
+                }
+                else {
+                    document.write("*");
+                   
+                }
+            }
+            col1--;
+            col2++;
+            document.write("<br>"); 
+        }
+
+        </script>
+    </h1></center>
+</body>
+
+</html>
